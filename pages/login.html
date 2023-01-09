@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <main class="d-flex justify-content-evenly align-items-center">
+        <div class="row">
+            <div class="col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hola! Bienvenido.</h5>
+                        <p class="card-text">Por favor ingresa tu e-mail y contraseña para acceder.</p>
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label for="inputEmail" class="form-label">* E-mail:</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com"
+                                    required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputPassword" class="form-label">* Password:</label>
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="Ingresa tu contraseña" minlength="10" required>
+                            </div>
+                        </form>
+                        <a href="#" class="btn btn-link mb-4 me-4" id="forgotPassword" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                            Olvidé mi contraseña
+                        </a>
+                        <a href="#" class="btn btn-link mb-4 ml-4" id="forgotPassword" data-bs-toggle="modal"
+                            data-bs-target="#modal5">
+                            Registrarme
+                        </a>
+                        <div class="row d-flex justify-content-center">
+                            <a href="./error404.html" class="btn btn-yellow mb-3 col-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-joystick me-2 mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z" />
+                                    <path
+                                        d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z" />
+                                </svg>Ingresar
+                            </a>
+                            <a href="./error404.html" class="btn btn-primary mb-3 col-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook me-2 mb-1" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>Ingresar con Facebook
+                            </a>
+                            <a href="./error404.html" class="btn btn-ligth text-bg-light mb-3 col-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-google me-2 mb-1" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                </svg>Ingresar con Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 d-flex justify-content-center">
+                <div class="row containerImagen d-flex justify-content-center">
+                    <img src="../img/tomi_logo.png" class=" logoDerecha col-12" id="logo" />
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="../index.html" class="btn-neon">
+                            <span id="span1"></span>
+                            <span id="span2"></span>
+                            <span id="span3"></span>
+                            <span id="span4"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house-door-fill me-2 mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                            </svg>HOME
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modal1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Olvidó su contraseña? - Paso 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputEmailRec" class="col-8">* Por favor ingrese su e-mail.</label>
+                    <input type="email" id="inputEmailRec" class="col-8 mt-2" placeholder="ejemplo@email.com" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#modal2" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Pregunta secreta - Paso 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Por favor elija una pregunta secreta y luego respóndala</h6>
+                    <label for="secretQuestion" class="form-label mt-3 mb-2">* Pregunta secreta:</label>
+                    <select id="secretQuestion" class="form-select mb-3" required>
+                        <option selected>Elija una pregunta...</option>
+                        <option>Cuál es el nombre de su mascota?</option>
+                        <option>Cuál es el apellido de su abuela materna?</option>
+                        <option>Cuál es su ciudad de nacimiento?</option>
+                        <option>Cuál es su apodo?</option>
+                    </select>
+                    <label for="secretAnswer" class="col-8 mb-2">* Respuesta secreta:</label>
+                    <input type="text" id="secretAnswer" class="col-9" placeholder="Escriba su respuesta aquí..."
+                        required>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-yellow" data-bs-target="#modal3" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1">Reestablecer contraseña - Paso 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputNewPass" class="mb-2">* Por favor ingrese una nueva contraseña:</label>
+                    <input type="password" id="inputNewPass" class="col-9 mb-3"
+                        placeholder="Ingrese una nueva contraseña..." required>
+                    <label for="inputNewPassConf" class="mb-2">* Por favor confirme la nueva contraseña:</label>
+                    <input type="password" id="inputNewPassConf" class="col-9 mb-3"
+                        placeholder="Confirme la nueva contraseña..." required>
+                    <label for="imHuman" class="col-3">* No soy un bot.</label>
+                    <input type="checkbox" id="imHuman" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#modal4" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title me-4" id="modal1">Felicidades!!
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-emoji-laughing mb-1 ml-4" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                        </svg>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputNewPass">Su contraseña ha sido reestablecida con éxito!</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#" data-bs-toggle="modal">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Creación de cuenta - Paso 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputEmailRec" class="col-8">* Por favor ingrese su e-mail.</label>
+                    <input type="email" id="inputEmailRec" class="col-8 mt-2" placeholder="ejemplo@email.com" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#modal6" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Pregunta secreta - Paso 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Por favor elija una pregunta secreta y luego respóndala</h6>
+                    <label for="secretQuestion" class="form-label mt-3 mb-2">* Pregunta secreta:</label>
+                    <select id="secretQuestion" class="form-select mb-3" required>
+                        <option selected>Elija una pregunta...</option>
+                        <option>Cuál es el nombre de su mascota?</option>
+                        <option>Cuál es el apellido de su abuela materna?</option>
+                        <option>Cuál es su ciudad de nacimiento?</option>
+                        <option>Cuál es su apodo?</option>
+                    </select>
+                    <label for="secretAnswer" class="col-8 mb-2">* Respuesta secreta:</label>
+                    <input type="text" id="secretAnswer" class="col-9" placeholder="Escriba su respuesta aquí..."
+                        required>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-yellow" data-bs-target="#modal7" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1">Establecer contraseña - Paso 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputNewPass" class="mb-2">* Por favor ingrese una contraseña:</label>
+                    <input type="password" id="inputNewPass" class="col-9 mb-3"
+                        placeholder="Ingrese una contraseña..." required>
+                    <label for="inputNewPassConf" class="mb-2">* Por favor confirme la contraseña:</label>
+                    <input type="password" id="inputNewPassConf" class="col-9 mb-3"
+                        placeholder="Confirme la contraseña..." required>
+                    <label for="imHuman" class="col-3">* No soy un bot.</label>
+                    <input type="checkbox" id="imHuman" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#modal8" data-bs-toggle="modal">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title me-4" id="modal1">Felicidades!!
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-emoji-laughing mb-1 ml-4" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                        </svg>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputNewPass">Su cuenta ha sido creada con éxito!</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-yellow" data-bs-target="#" data-bs-toggle="modal">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand:wght@600&display=swap');
+
+:root{
+  --bgCard:#1f2636;
+  --verMas:#e2aa0f;
+  --bgCardOscuro:#121720;
+  --verMasFuerte:#f5b812;
+  --bgBody:#1f263681;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: var(--bgCard);
+  color: var(--verMasFuerte);
+}
+
+main{
+  position: relative;
+  top: 7rem;
+  padding-bottom: 9rem;
+  z-index: -1;
+}
+
+html, body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.navColor{
+  background-color: #121720;
+  height: 6rem;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.buscador{
+  width: 40rem !important;
+  height: 2.7rem;
+  border-radius: 0px !important;
+}
+
+.btn-color{
+  background-color: white !important;
+  border-radius: 0rem !important;
+}
+
+.derechaNav a{
+  color: #f5b812;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.derechaNav a:hover{
+  color: #8f7326 ;
+  transition: 0.3s;
+}
+
+.buscador:hover{
+  text-decoration: none !important;
+}
+
+.btn-nav{
+  color: var(--verMasFuerte);
+  font-size: 1.1rem;
+  border:none;
+  padding: 0px 12px;
+}
+
+.btn-nav:hover{
+  color: #8f7326;
+}
+
+.btn-nav:visited, .btn-nav:active, .btn-nav:focus{
+  color: var(--verMasFuerte);
+}
+
+@media (max-width: 994px){
+  .imagenLogo{
+    height: 4.7rem;
+  }
+}
+
+@media (max-width: 690px){
+  .imagenLogo{
+    position: relative;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 994px){
+  .imagenLogo{
+    height: 4.7rem;
+  }
+}
+
+@media (max-width: 855px){
+  .derechaNav{
+    position: relative;
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 822px){
+  .about1{
+    font-size: 17px !important;
+  }
+  .derechaNav{
+    position: relative;
+    right: 0.7rem;
+  }
+}
+
+@media(max-width: 803px){
+  .about1{
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 767.5px){
+  .login1{
+    position: relative;
+    left: 0rem;
+  }
+  .contact1{
+    font-size: 17px !important;
+  }
+  .login1{
+    font-size: 17px !important;
+  }
+  .derechaNav{
+    position: relative;
+    left: 2rem;
+  }
+  .contenedorSearch{
+    position: relative;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 690px){
+  .imagenLogo{
+    position: relative;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 641px){
+  .contenedorSearch{
+    position: relative;
+    left: -0.3rem;
+  }
+}
+
+@media (max-width: 640px){
+  .buscador,.btn-color{
+    position: relative;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 617px ){
+  .about1{
+    font-size: 15px !important;
+  }
+  .contact1{
+    font-size: 15px !important;
+  }
+  .login1{
+    font-size: 15px !important;
+  }
+}
+
+@media(max-width: 566px){
+  .derechaNav{
+    position: relative;
+    left: 0.5rem;
+  }
+  .contenedorSearch{
+    position: relative;
+    left: -1.3rem;
+  }
+}
+
+@media(max-width: 551px){
+  .about1{
+    font-size: 12px !important;
+  }
+  .contact1{
+    font-size: 12px !important;
+  }
+  .login1{
+    font-size: 12px !important;
+  }
+  .derechaNav{
+    position: relative;
+    left: 2rem;
+  }
+  .contenedorSearch{
+    position: relative;
+    left: -10px;
+  }
+}
+
+@media(max-width: 527px){
+  .contenedorSearch{
+    position: relative;
+    left: -1rem;
+  }
+}
+
+@media(max-width: 512px){
+  .imagenLogo{
+    position: relative;
+    left: -2rem;
+  }
+  .derechaNav{
+    position: relative;
+    left: 2.5rem;
+  }
+}
+
+@media(max-width:500px){
+  .navbar-toggler{
+    display: block !important;
+  }
+  .asideBar{
+    display: none;
+  }
+  .asideBurguer{
+    display: block !important;
+  }
+  .derechaNavBurguer a{
+    color: #f5b812;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .derechaNavBurguer a:hover{
+    color: #8f7326 ;
+    transition: 0.3s;
+  }
+  .about1{
+    display: none;
+  }
+  .login1{
+    display: none;
+  }
+  .contenedorSearch{
+    display: none;
+  }
+  .contact1{
+    font-size: 15px !important;
+  }
+}
+
+.navbar-toggler{
+  display: none;
+}
+
+.about2{
+  font-size: 1.1rem;
+}
+
+.login2{
+  font-size: 1.1rem;
+}
+
+.btn-enviar{
+  color: var(--verMasFuerte);
+  font-size: 1.1rem;
+  border:none;
+  padding: 0px 12px;
+  background-color: var(--bgCardOscuro);
+}
+
+.offcanvas-title{
+  width: 3rem;
+}
+
+.imagenLogo{
+  height: 5rem;
+  margin-left: 3rem;
+}
+
+.centrarDiv{
+  position: relative;
+  right: 11px;
+}
+
+.btn-enviar:hover{
+  color: var(--verMasFuerte);
+  font-size: 1.1rem;
+  border:none;
+  padding: 0px 12px;
+  background-color: var(--bgCardOscuro);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media (max-width: 500px){
+  .login1{
+    display: none;
+  }
+}
+
+@media (min-width: 500px){
+  .login1{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contact1{
+  align-items: center;
+}
+
+.pie {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+  background-color: #121720;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+}
+
+.pie__icon--sm {
+  width: 40px;
+  height: 40px;
+  margin: 0
+}
+
+.contacto {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-color:#121720;
+}
+
+.seguinos {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color:#121720;
+}
+
+.informacion {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-color:#121720;
+}
+
+.bodyContacto{
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+
+.seguinos .button{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  background-color: #1f2636;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seguinos .button img{
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.seguinos .button span{
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.seguinos .button:hover{
+  width: 150px;
+  transition: 0.3s;
+}
+
+.seguinos .button img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+span > a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+span > a:hover{
+  color: white;
+}
+
+#instagram{
+  height: 45px;
+  width: 45px;
+  margin: 0;
+}
+
+.seguinos > div:nth-child(2){
+  margin-left: 10px;
+}
+
+.seguinos > div:nth-child(2) > div:nth-child(2) > span{
+  margin: 0 6px;
+}
+
+.bgLi{
+  background-color: var(--bgCard);
+  color: var(--verMasFuerte);
+}
+
+.fontColor{
+  color: white;
+}
+
+.fontColor:hover{
+  color: var(--verMasFuerte);
+}
+
+@media(max-width:767px){
+  .logoFooter{
+    display: none;
+  }
+}
+
+@media(max-width:575px){
+  .logoFooter{
+    display: none;
+  }
+}
+
+.btn-enviar:hover{
+  color: var(--verMasFuerte);
+  font-size: 1.1rem;
+  border:none;
+  padding: 0px 12px;
+  background-color: var(--bgCardOscuro);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.modal-header{
+  color: var(--verMasFuerte);
+  background-color:var(--bgCardOscuro) ;
+  border: none;
+}
+
+.modal-body{
+  color: var(--bgCard);
+  background-color: var(--bgBody);
+}
+
+.modal-footer{
+  background-color: var(--bgCardOscuro);
+  width: 100%;
+  border:none;
+}

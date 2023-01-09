@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand:wght@600&display=swap');
+
+:root{
+    --yellow: #e2aa0e;
+    --black: #1f2635;
+    --candle: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 535px;
+    height: 600px;
+    position: relative;
+    left: 0.3rem;
+    right: 2.5rem;
+    top: 2rem;
+    bottom: 2rem;
+    padding: 0;
+    border-radius: 2rem;
+    box-shadow: var(--candle);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img1{
+    width: 535px;
+    height: 600px;
+    position: absolute;
+    border-radius: 2rem;
+}
+
+.img2{
+    width: 535px;
+    height: 600px;
+    position: absolute;
+    display: none;
+    transition-delay: 00.5s;
+    animation-name: slide;
+    animation-duration: 0.9s;
+    border-radius: 2rem;
+    box-shadow: var(--candle);
+    filter: brightness(80%);
+}
+
+.container:hover .img2{
+    display: block;
+    transition-delay: 0.5s;
+}
+
+.img2:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+@keyframes slide{
+    0%{opacity: 0;}
+    100%{opacity: 0.7;}
+}
+
+#tooltip{
+    color: var(--yellow);
+    position: absolute;
+    top: 235px;
+    left: 10px;
+}
+
+#tooltipText{
+    position: absolute;
+    background-color: black;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 7px;
+    visibility: hidden;
+}
+
+#tooltipText::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+
+.container:hover #tooltipText{
+    visibility: visible;
+    transition-delay: 2s;
+}
+
+.btn-neon{
+    position: absolute;
+    right: 11rem;
+    top: 20rem;
+    padding: 15px 30px;
+    color: var(--yellow);
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 12rem;
+    height: 4rem;
+}
+
+.btn-neon:hover{
+    background: var(--yellow);
+    box-shadow: var(--candle);
+    transition-delay: 1s;
+    color: black;
+ }
+
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff0);
+ }
+
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ff0);
+}
+
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #ff0);
+}
+
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #ff0);
+}
+
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.btn-neon:active{
+    color: var(--yellow);
+    background-color: black;
+    border: 2px solid #e2aa0e;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px white;
+    animation: anim-shadow .3s forwards;
+    transition: 0s;
+}
+
+@keyframes anim-shadow{
+    100%{
+        box-shadow: #FFF 0 -1px 40px, #ff0 0 -2px 100px, #ff8000 0 -10px 200px, red 0 -18px 400px, 50px 50px 150px 50px rgba(0,0,0,0);
+    }
+}
+
+@media(max-width: 1300px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 35rem;
+        right: 35rem;
+    }
+}
+
+@media(max-width: 1250px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 32rem;
+        right: 32rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 29rem;
+        right: 29rem;
+    }
+}
+
+@media(max-width: 1150px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 27rem;
+        right: 27rem;
+    }
+}
+
+@media(max-width: 1100px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 25rem;
+        right: 25rem;
+    }
+}
+
+@media(max-width: 1050px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 23rem;
+        right: 23rem;
+    }
+}
+
+@media(max-width: 922px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 20rem;
+        right: 20rem;
+    }
+}
+
+@media(max-width: 800px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 18rem;
+        right: 18rem;
+    }
+}
+
+@media(max-width: 700px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 16rem;
+        right: 16rem;
+    }
+}
+
+@media(max-width: 650px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 14rem;
+        right: 14rem;
+    }
+}
+
+@media(max-width: 550px){
+    .btn-neon{
+        position: absolute;
+        top: 45rem;
+        left: 12rem;
+        right: 12rem;
+    }
+}

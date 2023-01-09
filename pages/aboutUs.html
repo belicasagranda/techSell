@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acerca de nosotros | TechSell</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/aboutUs.css">
+    <link rel="icon" href="../img/logoPestaña.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navColor">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="../../img/tomi_logo.png" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="derechaNavBurguer row col-12 d-flex justify-content-evenly align-content-center mb-5">
+                            <a class="col-md-6 col-12 about2" href="#">Acerca de nosotros</a>
+                            <a class="col-md-6 col-12 login2" href="../../pages/login.html">Login</a>
+                        </div>
+                        <section>
+                            <div>
+                                <aside class="asideBurguer">
+                                    <div class="searchBox">
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="¿Que estas buscando?">
+                                    </div>                    
+                                </aside>
+                            </div>
+                        </section>            
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a href="../../index.html">
+                        <img class="imagenLogo" src="../../img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="contenedorSearch col-6">
+                    <form class="d-flex" role="search">
+                        <input class="form-control buscador" type="search" placeholder="Buscar productos" aria-label="Search">
+                        <button class="btn btn-color d-flex justify-content-center align-items-center" type="submit"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="derechaNav row col-4 d-flex justify-content-evenly align-content-center">
+                    <a class="col-md-4 col-12 about1" href="#"> Acerca de nosotros</a>
+                    <button type="button" class="btn btn-nav contact1 col-md-4 col-12 d-flex" data-bs-toggle="modal" data-bs-target="#Contacto">
+                    Contacto</button>
+                    <a class="col-md-4 col-12 login1" href="./login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headerContainer">
+            <h1 class="text-center">Nosotros</h1>
+        </div>
+        <hr>
+        <div class="mainContainer">
+            <div class="container text-center" id="bgcontainer">
+                <div class="row">
+                    <div class="col-md-6 fs-3  text-start py-5 col-sm-12">
+                        Somos una empresa del norte argentino cuyo objetivo es acercar a nuestros clientes la mejor tecnologia a precios accesibles. 
+                        De la manera mas sencilla y rapida posible. Queremos que compres tranquilo, sabiendo que estas pagando un precio competitivo y la certeza que tus productos llegaran a tus manos.  
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="../img/tomi_logo.png" class="w-75" alt="fotoEcommerce">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class=" mt-md-5 mt-sm-2 row text-center">
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/aboutUsBeli.png" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Belisario</h6>
+                    <p class=" fs-6 fw-semibold">FullStack Developer; Estudiante de medicina; 19 años</p>
+                </div>
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/aboutUsGuada.png" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Guadalupe</h6>
+                    <p class=" fs-6 fw-semibold">Fundadora de Techsell; Estudiante ingenieria informatica; 18 años</p>
+                </div>
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/aboutUsFran.jpeg" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Francisco</h6>
+                    <p class=" fs-6 fw-semibold">FullStack Developer; Tecnico en marketing digital; 30 años</p>
+                </div>
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/aboutUsJuan.png" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Juan</h6>
+                    <p class=" fs-6 fw-semibold">Estudiante de abogacia; FullStack Developer; 22 años</p>
+                </div>
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/mauriAboutUs.png" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Mauricio</h6>
+                    <p class=" fs-6 fw-semibold">Productor asesor de seguros; FullStack Developer; 36 años</p>
+                </div>
+                <div class="col-md-4 col-sm-12 my-2">
+                    <img class=" w-50 rounded-circle imgTransform" src="../img/tomasAboutUs.png" class="rounded-circle" alt="...">
+                    <h6 class=" display-6">Tomas</h6>
+                    <p class=" fs-6 fw-semibold">FullStack Developer; Estudiante de medicina; 21 años</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row pie"> 
+            <div class="col-lg-4 col-md-3">     
+                <div style="max-width: 18rem;">
+                    <img class="logoFooter mt-3" src="../img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-4">
+                <div class="seguinos" style="max-width: 18rem;">
+                    <div class="mb-3">Nuestras redes sociales</div>
+                    <div>
+                        <div class="button mb-2">
+                            <a href="https://twitter.com/">
+                                <img src="../img/twitter.png" alt="logo de twitter"
+                            class="pie__icon--sm">
+                            </a>
+                            <span>
+                                <a href="https://twitter.com/">Twitter</a>
+                            </span>
+                        </div>
+                        <div class="button mb-2">
+                            <a href="https://www.instagram.com/techse1l/">
+                                <img src="../img/instagram.png" id="instagram" alt="logo de instagram"class="pie__icon--sm">
+                            </a>
+                            <span>
+                                <a href="https://www.instagram.com/techse1l/">Instagram</a>
+                            </span>
+                        </div>
+                        <div class="button">
+                            <a href="https://www.facebook.com/profile.php?id=100081385172050&sk=photos_albums">
+                                <img src="../img/facebook.png" alt="logo de facebook"class="pie__icon--sm">                                
+                            </a> 
+                            <span>
+                                <a href="https://www.facebook.com/profile.php?id=100081385172050&sk=photos_albums">Facebook</a>
+                            </span>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <div class="informacion" style="max-width: 18rem;">
+                    <div>Contacto</div>
+                    <div class="bodyContacto">
+                        <p>Celular: 3814069940</p>
+                        <p>Email: TechSell@gmail.com</p>
+                    </div>      
+                </div>
+            </div>  
+            <div class="d-flex justify-content-center">
+                &copy;2022, TechSell | Todos los derechos reservados              
+            </div>     
+        </div>
+    </footer>
+    <div class="modal fade" id="Contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Pais</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Elige tu pais...</option>
+                                <option>...</option>
+                                <option>Argentina</option>
+                                <option>Uruguay</option>
+                                <option>Paraguay</option>
+                                <option>Bolivia</option>
+                                <option>Peru</option>
+                                <option>Chile</option>
+                                <option>Brasil</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                        </div>
+                        <div class="form-floating col-12">
+                            <textarea class="form-control" placeholder="Dejanos tu mensaje aqui!" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Dejanos tu mensaje aqui!</label>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                Acepto enviar este mensaje
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-enviar" type="submit">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-nav" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
